@@ -6,7 +6,7 @@ let up = document.querySelector("#arrowUp");
 let down = document.querySelector("#arrowDown");
 let backSpace = document.querySelector("#back");
 let anwser = [];
-let problem = display.innerHTML;
+// let problem = display.innerHTML;
 
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function (e) {
@@ -47,13 +47,23 @@ function equals() {
 
     display.innerHTML = eval(problem);
     anwser.push(display.innerHTML);
-
 }
 
-up.addEventListener("click", upArrow);
-function upArrow() {
-    display.innerHTML = anwser;
-}
+// let currentIndex = anwser.length;
+
+// up.addEventListener("click", upArrow);
+// function upArrow() {
+//     if (anwser.length > 1) {
+//         currentIndex -= 1;
+//     }
+//     display.innerHTML = anwser[currentIndex];
+// }
+// down.addEventListener("click", downArrow);
+// function downArrow() {
+//     currentIndex += 1
+//     display.innerHTML = anwser[currentIndex];
+// }
+
 // down.addEventListener();
 // backSpace.addEventListener();
 
